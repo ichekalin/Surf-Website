@@ -1,0 +1,36 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suptitle-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding-left: 103px; //80 длинна линии + 23 отступ справа
+  position: relative;
+  display: inline-block;
+  &::before { // линия слева
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 1px;
+	background: #fff;
+	left: 0;
+	top: 50%;
+  }
+}
